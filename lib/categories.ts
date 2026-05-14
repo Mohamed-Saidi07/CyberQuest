@@ -1,0 +1,86 @@
+import type { ChallengeCategory } from './types'
+
+export const categories: ChallengeCategory[] = [
+  {
+    id: 'password-security',
+    name: 'Password Security',
+    slug: 'password-security',
+    description: 'Learn to create, manage, and protect strong passwords.',
+    icon: 'Lock',
+    color: 'cyber-blue',
+    glowClass: 'glow-blue',
+    challenges: [
+      {
+        id: 'ps-beginner',
+        categoryId: 'password-security',
+        title: 'Password Strength Analyzer',
+        description: 'Test passwords and learn what makes them strong or weak.',
+        difficulty: 'beginner',
+        points: 50,
+        type: 'interactive',
+        content: { kind: 'interactive', ... }
+      },
+      {
+        id: 'ps-intermediate',
+        categoryId: 'password-security',
+        title: 'Password Manager Setup',
+        description: 'Configure a password manager and understand encryption basics.',
+        difficulty: 'intermediate',
+        points: 100,
+        type: 'simulation',
+        content: { kind: 'simulation', ... }
+      },
+      {
+        id: 'ps-advanced',
+        categoryId: 'password-security',
+        title: 'Brute Force Defense Lab',
+        description: 'Simulate brute force attacks and configure defenses.',
+        difficulty: 'advanced',
+        points: 200,
+        type: 'quiz',
+        timeLimit: 120,
+        content: { kind: 'quiz', ... }
+      },
+    ],
+  },
+  {
+    id: 'phishing-detection',
+    name: 'Phishing Detection',
+    slug: 'phishing-detection',
+    description: 'Identify and avoid phishing scams, fake emails, and social engineering.',
+    icon: 'Fish',
+    color: 'cyber-green',
+    glowClass: 'glow-green',
+    challenges: [ /* same structure as above */ ],
+  },
+  {
+    id: 'network-safety',
+    name: 'Network Safety',
+    slug: 'network-safety',
+    description: 'Understand network threats, secure connections, and Wi-Fi safety.',
+    icon: 'Wifi',
+    color: 'cyber-purple',
+    glowClass: 'glow-purple',
+    challenges: [ /* same structure */ ],
+  },
+  {
+    id: 'malware-defense',
+    name: 'Malware Defense',
+    slug: 'malware-defense',
+    description: 'Identify malware types and learn prevention and removal strategies.',
+    icon: 'Bug',
+    color: 'cyber-pink',
+    glowClass: 'glow-pink',
+    challenges: [ /* same structure */ ],
+  },
+  {
+    id: 'data-privacy',
+    name: 'Data Privacy',
+    slug: 'data-privacy',
+    description: 'Protect personal data, understand regulations, and practice privacy hygiene.',
+    icon: 'Eye',
+    color: 'cyber-blue',
+    glowClass: 'glow-blue',
+    challenges: [ /* same structure */ ],
+  },
+]
